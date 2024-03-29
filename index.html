@@ -1,6 +1,14 @@
-<html>
-<head>
-<title> Project </title>
-</head>
-<body> Project </body>
-</html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Historical Earthquakes in Turkey</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
